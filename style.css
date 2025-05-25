@@ -11,6 +11,8 @@ body{
     overflow-x: hidden;
     opacity: 0;
     animation: fadeIn 1.2s ease forwards;
+    width: fit-content;
+    max-width: fit-content;
 }
 @keyframes fadeIn{
     to{
