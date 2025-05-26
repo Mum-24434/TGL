@@ -15,6 +15,9 @@ body {
   font-family: 'Segoe UI', sans-serif;
   background-color: var(--main-bg);
   color: var(--text-main);
+  width: fit-content;
+  max-width: fit-content;
+  margin: auto;
   overflow-x: hidden;
   opacity: 0;
   animation: fadeIn 1s ease forwards;
