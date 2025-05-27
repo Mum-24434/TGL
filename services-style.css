@@ -39,8 +39,8 @@ header {
   flex-wrap: wrap;
   padding: 15px 30px;
   position: sticky;
-  border-bottom: 5px solid var(--charcoal);
   top: 0;
+  border-bottom: 5px solid var(--charcoal);
   z-index: 1000;
   max-width: 100%;
 }
