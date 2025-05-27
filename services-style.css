@@ -15,7 +15,7 @@ body {
   font-family: 'Segoe UI', sans-serif;
   background-color: var(--main-bg);
   color: var(--text-main);
-  overflow-x: hidden;
+  overflow: auto;
   width: 100%;
   max-width: 100%;
   opacity: 0;
@@ -81,6 +81,7 @@ nav a:hover {
      row-gap: 50px;
      text-align: center;
      padding: 60px 20px;
+     
 }
 #cleaning-hero h2{
     font-size: 3em;
