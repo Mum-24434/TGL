@@ -1,4 +1,5 @@
 
+//gallery-section script
     function filterGallery(category) {
       const items = document.querySelectorAll(".gallery-item");
       const buttons = document.querySelectorAll(".filter-buttons button");
