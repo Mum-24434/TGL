@@ -44,7 +44,7 @@ header {
   border-bottom: 5px solid var(--charcoal);
   top: 0;
   z-index: 1000;
-  width: 100%;
+  max-width: 100%;
 }
 @media(max-width:900px){
   header{
@@ -96,17 +96,18 @@ nav a:hover {
   row-gap: 50px;
   text-align: center;
   padding: 60px 20px;
-  width: 100%;
+  max-width: 100%;
+  border-radius: 12px;
   
 }
 
 #open-background h2 {
-  font-size: 3rem;
+  font-size: 2.5rem;
   font-weight: bolder;
 }
 
 #open-background p {
-  font-size: 1.1rem;
+  font-size: 1rem;
   font-weight: bold;
 }
 

@@ -93,12 +93,12 @@ nav a:hover {
      padding: 60px 20px;
 }
 #cleaning-hero h2{
-    font-size: 3em;
+    font-size: 2.5em;
     font-weight: bolder;
     text-align: center;
 }
 #cleaning-hero p{
-    font-size: 1.1em;
+    font-size: 1em;
     font-weight: bold;
 }
 
@@ -157,12 +157,12 @@ background-color: var(--header-dark);
      padding: 60px 20px;
 }
 #painting-hero h2{
-    font-size: 3em;
+    font-size: 2.5em;
     font-weight: bolder;
     text-align: center;
 }
 #painting-hero p{
-    font-size: 1.1em;
+    font-size: 1em;
     font-weight: bold;
 }
 #painting-detail{
