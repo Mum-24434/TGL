@@ -31,7 +31,7 @@ body {
 header {
   background-color: var(--main-bg);
   display: flex;
-  justify-content: space-between;
+  justify-content: space-evenly;
   align-items: center;
   flex-wrap: wrap;
   padding: 15px 30px;
@@ -39,12 +39,18 @@ header {
   border-bottom: 5px solid var(--charcoal);
   top: 0;
   z-index: 1000;
+  width: 100%;
+}
+@media(max-width:900px){
+  header{
+    flex-direction: column;
+  }
 }
 
 #logo-side {
   display: flex;
   align-items: center;
-  gap: 15px;
+  gap: 20px;
 }
 
 #logo-side h1 {
@@ -56,7 +62,8 @@ header {
 nav ul {
   list-style: none;
   display: flex;
-  gap: 20px;
+  flex-wrap: wrap;
+  gap: 10px;
 }
 
 nav a {
@@ -84,6 +91,7 @@ nav a:hover {
   row-gap: 50px;
   text-align: center;
   padding: 60px 20px;
+  width: 100%;
   
 }
 
@@ -284,11 +292,13 @@ footer{
     color: var(--header-dark);
     border-top: 2px solid var(--charcoal);
     box-shadow: 0 8px 20px rgba(0,0,0,0.8);
+    
 }
 footer a{
     text-decoration: none;
     color: inherit;
     font-weight: bolder;
+    
 }
 footer i{
     margin-right: 10px;

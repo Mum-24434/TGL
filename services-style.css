@@ -10,10 +10,12 @@
 
 body {
   margin: 0;
-  padding: 0;
   font-family: 'Segoe UI', sans-serif;
   background-color: var(--main-bg);
   color: var(--text-main);
+  width: fit-content;
+  max-width: fit-content;
+  margin: auto;
   overflow-x: hidden;
   opacity: 0;
   animation: fadeIn 1s ease forwards;
@@ -27,20 +29,26 @@ body {
 header {
   background-color: var(--main-bg);
   display: flex;
-  justify-content: space-between;
+  justify-content: space-evenly;
   align-items: center;
   flex-wrap: wrap;
-  padding: 15px;
+  padding: 15px 30px;
   position: sticky;
   border-bottom: 5px solid var(--charcoal);
   top: 0;
   z-index: 1000;
+  width: 100%;
+}
+@media(max-width:900px){
+  header{
+    flex-direction: column;
+  }
 }
 
 #logo-side {
   display: flex;
   align-items: center;
-  gap: 15px;
+  gap: 10px;
 }
 
 #logo-side h1 {
@@ -100,9 +108,8 @@ section{
 }
 #cleaning-detail{
     padding: 40px 20px;
-    max-width: 800px;
-    margin: auto;
     line-height: 1.6;
+    
 }
 #cleaning-detail h2{
     margin-top: 30px;
@@ -155,7 +162,6 @@ background-color: var(--header-dark);
 }
 #painting-detail{
     padding: 40px 20px;
-    max-width: 800px;
     margin: auto;
     line-height: 1.6;
 }
