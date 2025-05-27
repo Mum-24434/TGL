@@ -17,7 +17,7 @@ body {
   background-color: var(--main-bg);
   color: var(--text-main);
   width: 100%;
-  max-width: 1000px;
+  max-width: 100%;
   margin: auto;
   overflow-x: hidden;
   opacity: 0;
