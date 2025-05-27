@@ -15,6 +15,7 @@ body{
 
 body {
   margin: 0;
+  padding-top: 100px ;
   font-family: 'Segoe UI', sans-serif;
   background-color: var(--main-bg);
   color: var(--text-main);
@@ -37,10 +38,11 @@ header {
   justify-content: space-evenly;
   align-items: center;
   flex-wrap: wrap;
-  padding: 15px 30px;
-  position: sticky;
+  padding: 15px 0 15px 0;
+  position: fixed;
   top: 0;
-  border-bottom: 5px solid var(--charcoal);
+  width: 100%;
+  border-bottom: 2px solid var(--charcoal);
   z-index: 1000;
   max-width: 100%;
 }
@@ -65,6 +67,7 @@ header {
 nav ul {
   list-style: none;
   display: flex;
+  flex-wrap: wrap;
   column-gap: 10px;
 }
 
