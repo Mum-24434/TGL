@@ -1,0 +1,275 @@
+:root {
+  --main-bg: #dcb06a;
+  --header-dark: #000000;
+  --charcoal: #222222;
+  --text-main: #1a1a1a;
+  --accent-light: #f6e9d7;
+  --white: #ffffff;
+  --section:#c89c52;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background-color: var(--main-bg);
+  color: var(--text-main);
+  overflow-x: hidden;
+  opacity: 0;
+  animation: fadeIn 1s ease forwards;
+}
+@keyframes fadeIn{
+    to{
+        opacity: 1;
+    }
+}
+
+header {
+  background-color: var(--main-bg);
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-wrap: wrap;
+  padding: 15px 30px;
+  position: sticky;
+  border-bottom: 5px solid var(--charcoal);
+  top: 0;
+  z-index: 1000;
+}
+
+#logo-side {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+#logo-side h1 {
+  color: var(--header-dark);
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+
+nav a {
+  text-decoration: none;
+  color: var(--header-dark);
+  font-weight: bold;
+  transition: color 0.3s;
+}
+
+nav a:hover {
+  color: #ff8800;
+}
+#cleaning-hero{
+     margin: auto;
+     background:linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)), url('open-background-cleaning.png');
+     background-position: center;
+     background-size: cover;
+     min-height: 100vh;
+     color: var(--accent-light);
+     display: flex;
+     justify-content: center;
+     flex-direction: column;
+     row-gap: 50px;
+     text-align: center;
+     padding: 60px 20px;
+}
+#cleaning-hero h2{
+    font-size: 3em;
+    font-weight: bolder;
+    text-align: center;
+}
+#cleaning-hero p{
+    font-size: 1.1em;
+    font-weight: bold;
+}
+
+section{
+    width: 90%;
+    background-color: var(--section);
+    padding: 60px 30px;
+    margin: 40px auto;
+    border-radius: 12px;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.8);
+    
+}
+#cleaning-detail{
+    padding: 40px 20px;
+    max-width: 800px;
+    margin: auto;
+    line-height: 1.6;
+}
+#cleaning-detail h2{
+    margin-top: 30px;
+    color: var(--text-main);
+}
+#cleaning-detail p{
+    padding-left: 20px;
+    
+}
+#cleaning-detail i{
+    padding: 10px;
+}
+#cleaning-detail a{
+background-color: var(--header-dark);
+  color: var(--accent-light);
+  text-decoration: none;
+  width: 20%;
+  font-weight: lighter;
+  border-radius: 8px;
+}
+#cleaning-detail a:hover{
+  background-color: #cc6e00;
+  box-shadow: 0 8px 15px rgba(0,0,0,0.2);
+  transform: translateY(-3px);
+  padding: 5px;
+  transition: 0.3s ease-in-out;
+}
+#painting-hero{
+     margin:20px auto 0 auto;
+     background:linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)), url('open-background-painting.png');
+     background-position: center;
+     background-size: cover;
+     min-height: 100vh;
+     color: var(--accent-light);
+     display: flex;
+     justify-content: center;
+     flex-direction: column;
+     row-gap: 50px;
+     text-align: center;
+     padding: 60px 20px;
+}
+#painting-hero h2{
+    font-size: 3em;
+    font-weight: bolder;
+    text-align: center;
+}
+#painting-hero p{
+    font-size: 1.1em;
+    font-weight: bold;
+}
+#painting-detail{
+    padding: 40px 20px;
+    max-width: 800px;
+    margin: auto;
+    line-height: 1.6;
+}
+#painting-detail h2{
+    margin-top: 30px;
+    color: var(--text-main);
+}
+#painting-detail p{
+    padding-left: 20px;
+    
+}
+#painting-detail i{
+    padding: 10px;
+}
+#painting-detail a{
+background-color: var(--header-dark);
+  color: var(--accent-light);
+  text-decoration: none;
+  width: 20%;
+  font-weight: lighter;
+  border-radius: 8px;
+}
+#painting-detail a:hover{
+  background-color: #cc6e00;
+  box-shadow: 0 8px 15px rgba(0,0,0,0.2);
+  transform: translateY(-3px);
+  padding: 5px;
+  transition: 0.3s ease-in-out;
+}
+#housekeeping-fantasy {
+  background: url('fantasy-bg.png') center/cover no-repeat;
+  padding: 60px 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 30px;
+  height: 300px;
+  position: relative;
+  color: #fff;
+}
+
+#quote-box {
+  background-color: rgba(0, 0, 0, 0.6);
+  padding: 30px;
+  max-width: 500px;
+  text-align: center;
+  border-radius: 10px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.4);
+}
+
+#quote {
+  font-size: 20px;
+  font-style: italic;
+  margin-bottom: 20px;
+}
+
+.quote-button {
+  background-color: #ff8800;
+  color: white;
+  border: none;
+  padding: 10px 25px;
+  font-weight: bold;
+  border-radius: 25px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.quote-button:hover {
+  background-color: #cc6e00;
+}
+#housekeeping-fantasy img{
+  border-radius: 50%;
+  display: flex;
+  justify-content: flex-end;
+  align-self: flex-end;
+  
+}
+#contact-link{
+  background-color: var(--main-bg);
+}
+#contact-link a{
+  background-color: var(--header-dark);
+  color: var(--accent-light);
+  text-decoration: none;
+  padding: 10px 20px;
+  font-weight: bold;
+  border-radius: 8px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+#contact-link a:hover {
+  background-color: #cc6e00;
+  box-shadow: 0 8px 15px rgba(0,0,0,0.2);
+  transform: translateY(-3px);
+}
+footer{
+    background-color: var(--main-bg);
+    padding: 15px 30px;
+    color: var(--header-dark);
+    border-top: 2px solid var(--charcoal);
+    box-shadow: 0 8px 20px rgba(0,0,0,0.8);
+}
+footer a{
+    text-decoration: none;
+    color: inherit;
+    font-weight: bolder;
+}
+footer i{
+    margin-right: 10px;
+}
+footer a:hover{
+    color: #0056b3;
+    text-decoration: underline;
+}
