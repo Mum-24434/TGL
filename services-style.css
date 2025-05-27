@@ -7,6 +7,11 @@
   --white: #ffffff;
   --section:#c89c52;
 }
+html,
+body{
+  box-sizing: border-box;
+  overflow-x: hidden;
+}
 
 body {
   margin: 0;
@@ -37,7 +42,7 @@ header {
   border-bottom: 5px solid var(--charcoal);
   top: 0;
   z-index: 1000;
-  width: 100%;
+  max-width: 100%;
 }
 @media(max-width:900px){
   header{
@@ -98,7 +103,7 @@ nav a:hover {
 }
 
 section{
-    width: 90%;
+    max-width: 90%;
     background-color: var(--section);
     padding: 60px 30px;
     margin: 40px auto;
@@ -266,6 +271,7 @@ footer{
     color: var(--header-dark);
     border-top: 2px solid var(--charcoal);
     box-shadow: 0 8px 20px rgba(0,0,0,0.8);
+    max-width: 100%;
 }
 footer a{
     text-decoration: none;

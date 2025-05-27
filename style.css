@@ -9,6 +9,11 @@
   --white: #ffffff;
   --section:#c89c52;
 }
+html,
+body{
+  box-sizing: border-box;
+  overflow-x: hidden;
+}
 
 body {
   margin: 0;
@@ -129,7 +134,7 @@ section{
     margin: 40px auto;
     border-radius: 12px;
     box-shadow: 0 8px 20px rgba(0,0,0,0.8);
-    width: 90%;
+    max-width: 90%;
 }
 
 /* Service Section */
@@ -186,7 +191,7 @@ section{
 #about-us-section {
   background-color: var(--section);
   padding: 60px 20px;
-  text-align: center;
+  text-align: justify;
   
 }
 
@@ -194,6 +199,7 @@ section{
   color: var(--header-dark);
   margin-bottom: 20px;
   font-size: 2rem;
+  text-align: center;
 }
 
 #about-us-section p {
@@ -292,6 +298,7 @@ footer{
     color: var(--header-dark);
     border-top: 2px solid var(--charcoal);
     box-shadow: 0 8px 20px rgba(0,0,0,0.8);
+    max-width: 100%;
     
 }
 footer a{
