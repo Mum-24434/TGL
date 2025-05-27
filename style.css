@@ -8,7 +8,6 @@
   --accent-light: #f6e9d7;
   --white: #ffffff;
   --section:#c89c52;
-  box-sizing: border-box;
 }
 
 body {
@@ -16,10 +15,10 @@ body {
   font-family: 'Segoe UI', sans-serif;
   background-color: var(--main-bg);
   color: var(--text-main);
-  width: 100%;
-  max-width: 100%;
+  width: fit-content;
+  max-width: fit-content;
   margin: auto;
-  overflow: auto;
+  overflow-x: hidden;
   opacity: 0;
   animation: fadeIn 1s ease forwards;
 }
@@ -32,7 +31,7 @@ body {
 header {
   background-color: var(--main-bg);
   display: flex;
-  justify-content: space-evenly;
+  justify-content: space-between;
   align-items: center;
   flex-wrap: wrap;
   padding: 15px 30px;
