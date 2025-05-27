@@ -8,6 +8,7 @@
   --accent-light: #f6e9d7;
   --white: #ffffff;
   --section:#c89c52;
+  box-sizing: border-box;
 }
 
 body {
@@ -15,8 +16,8 @@ body {
   font-family: 'Segoe UI', sans-serif;
   background-color: var(--main-bg);
   color: var(--text-main);
-  width: fit-content;
-  max-width: fit-content;
+  width: 100%;
+  max-width: 1000px;
   margin: auto;
   overflow-x: hidden;
   opacity: 0;

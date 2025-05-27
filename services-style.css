@@ -6,6 +6,7 @@
   --accent-light: #f6e9d7;
   --white: #ffffff;
   --section:#c89c52;
+  box-sizing: border-box;
 }
 
 body {
@@ -15,6 +16,8 @@ body {
   background-color: var(--main-bg);
   color: var(--text-main);
   overflow-x: hidden;
+  width: 100%;
+  max-width: 1000px;
   opacity: 0;
   animation: fadeIn 1s ease forwards;
 }
