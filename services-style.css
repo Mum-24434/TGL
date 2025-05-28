@@ -15,7 +15,6 @@ body{
 
 body {
   margin: 0;
-  padding-top: 100px ;
   font-family: 'Segoe UI', sans-serif;
   background-color: var(--main-bg);
   color: var(--text-main);
@@ -87,13 +86,16 @@ nav a:hover {
      background-position: center;
      background-size: cover;
      min-height: 100vh;
+     min-width: 90%;
      color: var(--accent-light);
      display: flex;
      justify-content: center;
      flex-direction: column;
      row-gap: 50px;
      text-align: center;
-     padding: 60px 20px;
+     padding: 200px 20px 60px 20px;
+     border-radius: 12px;
+     
 }
 #cleaning-hero h2{
     font-size: 2.5em;
@@ -115,6 +117,7 @@ section{
     
 }
 #cleaning-detail{
+    margin: auto;
     padding: 40px 20px;
     line-height: 1.6;
     
@@ -151,6 +154,7 @@ background-color: var(--header-dark);
      background-position: center;
      background-size: cover;
      min-height: 100vh;
+     min-width: 90%;
      color: var(--accent-light);
      display: flex;
      justify-content: center;
@@ -158,6 +162,7 @@ background-color: var(--header-dark);
      row-gap: 50px;
      text-align: center;
      padding: 60px 20px;
+     border-radius: 12px;
 }
 #painting-hero h2{
     font-size: 2.5em;
@@ -207,6 +212,7 @@ background-color: var(--header-dark);
   align-items: center;
   flex-direction: column;
   gap: 30px;
+  min-width: 90%;
   height: 300px;
   position: relative;
   color: #fff;
