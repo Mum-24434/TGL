@@ -253,10 +253,12 @@ section{
     flex-direction: row;
     flex-wrap: wrap;
     gap: 20px;
+    max-width: 100%;
+    min-width: 90%;
     
 }
 .gallery-item{
-    padding: 2px 4px;
+    padding: 1px;
     border-radius: 10px;
     background-color: var(--white);
     
