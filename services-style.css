@@ -6,6 +6,7 @@
   --accent-light: #f6e9d7;
   --white: #ffffff;
   --section:#c89c52;
+  --footer: #3b2f2f;
 }
 html,
 body{
@@ -275,15 +276,15 @@ background-color: var(--header-dark);
   transform: translateY(-3px);
 }
 footer{
-    background-color: var(--main-bg);
+    background-color: var(--footer);
     padding: 15px 30px;
-    color: var(--header-dark);
-    border-top: 2px solid var(--charcoal);
+    color: var(--accent-light);
     box-shadow: 0 8px 20px rgba(0,0,0,0.8);
     max-width: 100%;
+    
 }
 footer a {
-  color: #1e40af;
+  color: #f0c674;
   text-decoration: underline;
   font-weight: 500;
 }
@@ -294,13 +295,6 @@ footer a:hover {
   text-decoration: none; 
 }
 
-footer a:active {
-  color: #eab308;
-}
-
-footer a:visited {
-  color: #6b21a8;
-}
 
 footer i{
     margin-right: 10px;

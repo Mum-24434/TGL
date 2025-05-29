@@ -8,6 +8,7 @@
   --accent-light: #f6e9d7;
   --white: #ffffff;
   --section:#c89c52;
+  --footer: #3b2f2f;
 }
 html,
 body{
@@ -63,55 +64,6 @@ header {
   color: var(--header-dark);
   font-size: 1.5rem;
   font-weight: bold;
-}
-/* Hide toggle by default */
-.nav-toggle {
-  display: none;
-  background: none;
-  border: none;
-  font-size: 2rem;
-  cursor: pointer;
-  color: var(--header-dark);
-}
-
-/* Mobile nav styling */
-.mobile-nav {
-  position: fixed;
-  top: 70px;
-  left: -100%;
-  width: 250px;
-  background-color: var(--main-bg);
-  padding: 20px;
-  transition: left 0.3s ease;
-  z-index: 999;
-}
-
-.mobile-nav.open {
-  left: 0;
-}
-
-.mobile-nav ul {
-  list-style: none;
-  padding: 0;
-}
-
-.mobile-nav a {
-  display: block;
-  margin-bottom: 15px;
-  text-decoration: none;
-  color: var(--header-dark);
-  font-weight: bold;
-}
-
-/* Responsive rules */
-@media (max-width: 900px) {
-  .desktop-nav {
-    display: none;
-  }
-
-  .nav-toggle {
-    display: block;
-  }
 }
 
 nav ul {
@@ -326,7 +278,7 @@ form label{
     margin-top: 10px;
 }
 form input, form textarea, form select, form button{
-    width: 100%;
+    width: 95%;
     padding: 0.5em;
     margin-top: 0.3em;
     border: 2px solid var(--main-bg);
@@ -348,16 +300,15 @@ form button:hover{
     transform: translateY(-3px);
 }
 footer{
-    background-color: var(--main-bg);
+    background-color: var(--footer);
     padding: 15px 30px;
-    color: var(--header-dark);
-    border-top: 2px solid var(--charcoal);
+    color: var(--accent-light);
     box-shadow: 0 8px 20px rgba(0,0,0,0.8);
     max-width: 100%;
     
 }
 footer a {
-  color: #1e40af;
+  color: #f0c674;
   text-decoration: underline;
   font-weight: 500;
 }
@@ -368,13 +319,6 @@ footer a:hover {
   text-decoration: none; 
 }
 
-footer a:active {
-  color: #eab308;
-}
-
-footer a:visited {
-  color: #6b21a8;
-}
 
 footer i{
     margin-right: 10px;
