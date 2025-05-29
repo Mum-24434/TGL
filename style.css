@@ -64,6 +64,55 @@ header {
   font-size: 1.5rem;
   font-weight: bold;
 }
+/* Hide toggle by default */
+.nav-toggle {
+  display: none;
+  background: none;
+  border: none;
+  font-size: 2rem;
+  cursor: pointer;
+  color: var(--header-dark);
+}
+
+/* Mobile nav styling */
+.mobile-nav {
+  position: fixed;
+  top: 70px;
+  left: -100%;
+  width: 250px;
+  background-color: var(--main-bg);
+  padding: 20px;
+  transition: left 0.3s ease;
+  z-index: 999;
+}
+
+.mobile-nav.open {
+  left: 0;
+}
+
+.mobile-nav ul {
+  list-style: none;
+  padding: 0;
+}
+
+.mobile-nav a {
+  display: block;
+  margin-bottom: 15px;
+  text-decoration: none;
+  color: var(--header-dark);
+  font-weight: bold;
+}
+
+/* Responsive rules */
+@media (max-width: 900px) {
+  .desktop-nav {
+    display: none;
+  }
+
+  .nav-toggle {
+    display: block;
+  }
+}
 
 nav ul {
   list-style: none;
