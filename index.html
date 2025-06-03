@@ -110,14 +110,21 @@ At TGL, our mission is to enhance the beauty, comfort, and cleanliness of every 
         <button onclick="filterGallery(event, 'painting')">Painting</button> 
         <button onclick="filterGallery(event, 'cleaning')">Cleaning</button> 
         </div>
-        <div class="gallery-grid"> <div class="gallery-item" data-category="painting"> <video src="painting1.mp4" width="360px" controls></video> 
-        </div>  <div class="gallery-item" data-category="painting"> <video src="painting2.mp4" width="360px" controls></video> </div> 
-        <div class="gallery-item" data-category="cleaning"> <video src="cleaning1.mp4" width="360px" controls></video> </div>
-        <div class="gallery-item" data-category="cleaning"> <video src="cleaning2.mp4" width="360px" height="200px" controls></video> </div> 
-        <div class="gallery-item" data-category="cleaning"> <video src="cleaning3.mp4" width="360px" height="200px" controls></video> </div> 
+        <div class="gallery-grid">
+             <div class="gallery-item" data-category="painting"><img src="painting-service1.jpg" alt="painting" onclick="openFull(this.src)">
+        </div>  
+        <div class="gallery-item" data-category="painting"> <img src="painting-service2.jpg" alt="painting" onclick="openFull(this.src)"> </div> 
+        <div class="gallery-item" data-category="painting"> <img src="painting-service3.jpg" alt="painting" onclick="openFull(this.src)"> </div>
+        <div class="gallery-item" data-category="cleaning"> <img src="cleaning-service1.jpg" alt="cleaning" onclick="openFull(this.src)"> </div> 
+        <div class="gallery-item" data-category="cleaning"> <img src="cleaning-service2.jpg" alt="painting" onclick="openFull(this.src)"> </div> 
+        <div class="gallery-item" data-category="cleaning"> <img src="cleaning-service3.jpg" alt="painting" onclick="openFull(this.src)"> </div> 
         </div>
 
     </section>
+    <div id="fullscreenViewer" onclick="closeFull">
+        <span class="close-button" onclick="closeFull(event)">x</span>
+        <img id="fullImage" src="" alt="Full View">
+    </div>
 
    <section id="contact-section" data-aos="fade-up" data-aos-delay="350">
         <h2>Request a Service</h2>
