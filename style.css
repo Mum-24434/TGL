@@ -59,12 +59,20 @@ header {
   align-items: center;
   gap: 10px;
 }
-
-#logo-side h1 {
+#logo-side-text-area {
+  text-align: center;
+}
+#logo-side-text-area h1 {
   color: var(--header-dark);
   font-size: 1.5rem;
-  font-weight: bold;
+  font-weight: bolder;
+  text-align: center;
 }
+/*#logo-side-text-area p{
+  font-size: 1em;
+  font-weight: bold;
+  color: var(--white);
+}*/
 
 nav ul {
   list-style: none;
@@ -141,11 +149,10 @@ section{
 /* Service Section */
 #service-section {
   display: flex;
-  flex-wrap: wrap;
-  gap: 40px;
   justify-content: center;
-  padding: 50px 20px;
-  min-width: 90%;
+  gap: 40px;
+  flex-wrap: wrap;
+  
 }
 
 #service-section div {
@@ -153,13 +160,13 @@ section{
   color: var(--charcoal);
   padding: 20px;
   border-radius: 10px;
-  width: 350px;
+  max-width: 350px;
   text-align: center;
+  
 }
 
 #service-section img {
   border-radius: 10px;
-  width: 100%;
   margin-bottom: 15px;
 }
 

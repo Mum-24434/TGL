@@ -86,7 +86,7 @@ nav a:hover {
      background:linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)), url('open-background-cleaning.png');
      background-position: center;
      background-size: cover;
-     min-height: 100vh;
+     max-height: 100vh;
      min-width: 90%;
      color: var(--accent-light);
      display: flex;
@@ -149,12 +149,71 @@ background-color: var(--header-dark);
   padding: 5px;
   transition: 0.3s ease-in-out;
 }
+#tiling-hero{
+     margin:20px auto 0 auto;
+     background:linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)), url('tiling-service1.jpg');
+     background-position: center;
+     background-size: cover;
+     max-height: 100vh;
+     min-width: 90%;
+     color: var(--accent-light);
+     display: flex;
+     justify-content: center;
+     flex-direction: column;
+     row-gap: 50px;
+     text-align: center;
+     padding: 200px 20px 60px 20px;
+     border-radius: 12px;
+     
+}
+#tiling-hero h2{
+    font-size: 2.5em;
+    font-weight: bolder;
+    text-align: center;
+}
+#tiling-hero p{
+    font-size: 1em;
+    font-weight: bold;
+}
+
+#tiling-detail{
+    margin: auto;
+    padding: 40px 20px;
+    line-height: 1.6;
+    
+}
+#tiling-detail h2{
+    margin-top: 30px;
+    color: var(--text-main);
+}
+#tiling-detail p{
+    padding-left: 20px;
+    
+}
+#tiling-detail i{
+    padding: 10px;
+}
+#tiling-detail a{
+background-color: var(--header-dark);
+  color: var(--accent-light);
+  text-decoration: none;
+  width: 20%;
+  font-weight: lighter;
+  border-radius: 8px;
+}
+#tiling-detail a:hover{
+  background-color: #cc6e00;
+  box-shadow: 0 8px 15px rgba(0,0,0,0.2);
+  transform: translateY(-3px);
+  padding: 5px;
+  transition: 0.3s ease-in-out;
+}
 #painting-hero{
      margin:20px auto 0 auto;
      background:linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)), url('open-background-painting.png');
      background-position: center;
      background-size: cover;
-     min-height: 100vh;
+     max-height: 100vh;
      min-width: 90%;
      color: var(--accent-light);
      display: flex;
@@ -199,6 +258,183 @@ background-color: var(--header-dark);
   border-radius: 8px;
 }
 #painting-detail a:hover{
+  background-color: #cc6e00;
+  box-shadow: 0 8px 15px rgba(0,0,0,0.2);
+  transform: translateY(-3px);
+  padding: 5px;
+  transition: 0.3s ease-in-out;
+}
+#plastering-hero{
+     margin:20px auto 0 auto;
+     background:linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)), url('plastering-service1.jpg');
+     background-position: center;
+     background-size: cover;
+     max-height: 100vh;
+     min-width: 90%;
+     color: var(--accent-light);
+     display: flex;
+     justify-content: center;
+     flex-direction: column;
+     row-gap: 50px;
+     text-align: center;
+     padding: 200px 20px 60px 20px;
+     border-radius: 12px;
+     
+}
+#plastering-hero h2{
+    font-size: 2.5em;
+    font-weight: bolder;
+    text-align: center;
+}
+#plastering-hero p{
+    font-size: 1em;
+    font-weight: bold;
+}
+
+#plastering-detail{
+    margin: auto;
+    padding: 40px 20px;
+    line-height: 1.6;
+    
+}
+#plastering-detail h2{
+    margin-top: 30px;
+    color: var(--text-main);
+}
+#plastering-detail p{
+    padding-left: 20px;
+    
+}
+#plastering-detail i{
+    padding: 10px;
+}
+#plastering-detail a{
+background-color: var(--header-dark);
+  color: var(--accent-light);
+  text-decoration: none;
+  width: 20%;
+  font-weight: lighter;
+  border-radius: 8px;
+}
+#plastering-detail a:hover{
+  background-color: #cc6e00;
+  box-shadow: 0 8px 15px rgba(0,0,0,0.2);
+  transform: translateY(-3px);
+  padding: 5px;
+  transition: 0.3s ease-in-out;
+}
+#carpentry-hero{
+     margin:20px auto 0 auto;
+     background:linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)), url('carpentry-service1.jpg');
+     background-position: center;
+     background-size: cover;
+     max-height: 100vh;
+     min-width: 90%;
+     color: var(--accent-light);
+     display: flex;
+     justify-content: center;
+     flex-direction: column;
+     row-gap: 50px;
+     text-align: center;
+     padding: 200px 20px 60px 20px;
+     border-radius: 12px;
+     
+}
+#carpentry-hero h2{
+    font-size: 2.5em;
+    font-weight: bolder;
+    text-align: center;
+}
+#carpentry-hero p{
+    font-size: 1em;
+    font-weight: bold;
+}
+
+#carpentry-detail{
+    margin: auto;
+    padding: 40px 20px;
+    line-height: 1.6;
+    
+}
+#carpentry-detail h2{
+    margin-top: 30px;
+    color: var(--text-main);
+}
+#carpentry-detail p{
+    padding-left: 20px;
+    
+}
+#carpentry-detail i{
+    padding: 10px;
+}
+#carpentry-detail a{
+background-color: var(--header-dark);
+  color: var(--accent-light);
+  text-decoration: none;
+  width: 20%;
+  font-weight: lighter;
+  border-radius: 8px;
+}
+#carpentry-detail a:hover{
+  background-color: #cc6e00;
+  box-shadow: 0 8px 15px rgba(0,0,0,0.2);
+  transform: translateY(-3px);
+  padding: 5px;
+  transition: 0.3s ease-in-out;
+}
+#plumbing-hero{
+     margin:20px auto 0 auto;
+     background:linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)), url('plumbing-service1.jpg');
+     background-position: center;
+     background-size: cover;
+     max-height: 100vh;
+     min-width: 90%;
+     color: var(--accent-light);
+     display: flex;
+     justify-content: center;
+     flex-direction: column;
+     row-gap: 50px;
+     text-align: center;
+     padding: 200px 20px 60px 20px;
+     border-radius: 12px;
+     
+}
+#plumbing-hero h2{
+    font-size: 2.5em;
+    font-weight: bolder;
+    text-align: center;
+}
+#plumbing-hero p{
+    font-size: 1em;
+    font-weight: bold;
+}
+
+#plumbing-detail{
+    margin: auto;
+    padding: 40px 20px;
+    line-height: 1.6;
+    
+}
+#plumbing-detail h2{
+    margin-top: 30px;
+    color: var(--text-main);
+}
+#plumbing-detail p{
+    padding-left: 20px;
+    
+}
+#plumbing-detail i{
+    padding: 10px;
+}
+#plumbing-detail a{
+background-color: var(--header-dark);
+  color: var(--accent-light);
+  text-decoration: none;
+  width: 20%;
+  font-weight: lighter;
+  border-radius: 8px;
+}
+#plumbing-detail a:hover{
   background-color: #cc6e00;
   box-shadow: 0 8px 15px rgba(0,0,0,0.2);
   transform: translateY(-3px);
