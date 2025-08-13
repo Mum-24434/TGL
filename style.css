@@ -97,7 +97,7 @@ nav a:hover {
   background:linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)), url('backgroung.jpeg.png');
   background-position: center;
   background-size: cover;
-  max-height: 100vh;
+  max-height: 50vh;
   color: var(--accent-light);
   display: flex;
   justify-content: center;
@@ -106,6 +106,12 @@ nav a:hover {
   text-align: center;
   padding: 200px 20px 60px 20px;
   border-radius: 12px;
+  
+}
+@media (max-width: 1000px) {
+  #open-background{
+    margin-top: 150px ;
+  }
   
 }
 
@@ -237,12 +243,13 @@ section{
 .filter-buttons{
     text-align: center;
     margin-bottom: 30px;
+    
 }
 .filter-buttons button{
     background: #e0e0e0;
     border: none;
     padding: 10px 20px;
-    margin: 0 10px;
+    margin: 5px 10px;
     border-radius: 20px;
     cursor: pointer;
     font-weight: bold;

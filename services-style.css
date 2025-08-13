@@ -98,6 +98,11 @@ nav a:hover {
      border-radius: 12px;
      
 }
+@media (max-width: 750px){
+  #cleaning-hero{
+    margin-top:200px;
+  }
+}
 #cleaning-hero h2{
     font-size: 2.5em;
     font-weight: bolder;
@@ -435,6 +440,64 @@ background-color: var(--header-dark);
   border-radius: 8px;
 }
 #plumbing-detail a:hover{
+  background-color: #cc6e00;
+  box-shadow: 0 8px 15px rgba(0,0,0,0.2);
+  transform: translateY(-3px);
+  padding: 5px;
+  transition: 0.3s ease-in-out;
+}
+#bricklaying-hero{
+     margin:20px auto 0 auto;
+     background:linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)), url('bricklaying-service1.jpg');
+     background-position: center;
+     background-size: cover;
+     max-height: 100vh;
+     min-width: 90%;
+     color: var(--accent-light);
+     display: flex;
+     justify-content: center;
+     flex-direction: column;
+     row-gap: 50px;
+     text-align: center;
+     padding: 200px 20px 60px 20px;
+     border-radius: 12px;
+}
+#bricklaying-hero h2{
+    font-size: 2.5em;
+    font-weight: bolder;
+    text-align: center;
+}
+#bricklaying-hero p{
+    font-size: 1em;
+    font-weight: bold;
+}
+
+#bricklaying-detail{
+    margin: auto;
+    padding: 40px 20px;
+    line-height: 1.6;
+    
+}
+#bricklaying-detail h2{
+    margin-top: 30px;
+    color: var(--text-main);
+}
+#bricklaying-detail p{
+    padding-left: 20px;
+    
+}
+#bricklaying-detail i{
+    padding: 10px;
+}
+#bricklaying-detail a{
+background-color: var(--header-dark);
+  color: var(--accent-light);
+  text-decoration: none;
+  width: 20%;
+  font-weight: lighter;
+  border-radius: 8px;
+}
+#bricklaying-detail a:hover{
   background-color: #cc6e00;
   box-shadow: 0 8px 15px rgba(0,0,0,0.2);
   transform: translateY(-3px);
