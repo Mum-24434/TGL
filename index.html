@@ -58,22 +58,45 @@
 </head>
 <body>
     <header>
-        <div id="logo-side">
-        <img src="logo.png" alt="Tobak Global Limited Logo" width="80px" style="background-color: #222222; padding: 5px; border-radius: 50%;">
-        <div id="logo-side-text-area">
-        <h1>TOBAK GLOBAL LIMITED</h1>
-       <!--  <p>PROPERTY MAINTENANCE AND CLEANING SERVICES  </p> --></div>
-        </div>
-        <nav>
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="services.html" target="_blank">Services</a></li>
-                <li><a href="#about-us-section">About</a></li>
-                <li><a href="#gallery-section">Gallery</a></li>
-                <li><a href="#contact-section">Contact</a></li>
-            </ul>
-        </nav>
-    </header>
+  <div id="logo-side">
+    <img src="logo.png" alt="Tobak Global Limited Logo" width="70" style="background-color: #222; padding: 5px; border-radius: 50%;">
+    <div id="logo-side-text-area">
+      <h1>TOBAK GLOBAL LIMITED</h1>
+      <p>PROPERTY MAINTENANCE AND CLEANING SERVICES</p>
+    </div>
+  </div>
+
+  <!-- Menu Toggle Button -->
+  <div id="menu-toggle">&#9776;</div>
+</header>
+
+<!-- Side Navigation -->
+<nav id="side-nav">
+  <ul>
+    <li><a href="index.html">Home</a></li>
+    <li class="dropdown">
+      <a href="services.html" class="dropdown-toggle">Services ▾</a>
+      <ul class="dropdown-menu">
+        <li><a href="services.html#cleaning-hero">Cleaning</a></li>
+        <li><a href="services.html#tiling-hero">Tiling</a></li>
+        <li><a href="services.html#painting-hero">Painting</a></li>
+        <li><a href="services.html#plastering-hero">Plastering</a></li>
+        <li><a href="services.html#carpentry-hero">Carpentry</a></li>
+        <li><a href="services.html#plumbing-hero">Plumbing</a></li>
+        <li><a href="services.html#bricklaying-hero">Bricklaying</a></li>
+        
+      </ul>
+    </li>
+    <li><a href="#about-us-section">About</a></li>
+    <li><a href="#gallery-section">Gallery</a></li>
+    <li><a href="#contact-section">Contact</a></li>
+  </ul>
+</nav>
+
+
+<!-- Overlay -->
+<div id="overlay"></div>
+
     <div id="open-background" data-aos="zoom-in-up" data-aos-delay="50">
         <h2>More Than Maintenance </h2>
         <p>We Transform Your Space Into Something Exceptional</p>
@@ -274,6 +297,38 @@
         </script>
         <script>
             AOS.init();
+        </script>
+
+        
+        <script>
+            const menuToggle = document.getElementById("menu-toggle");
+const sideNav = document.getElementById("side-nav");
+const overlay = document.getElementById("overlay");
+const dropdownToggle = document.querySelector(".dropdown-toggle");
+const dropdown = document.querySelector(".dropdown");
+
+menuToggle.addEventListener("click", () => {
+  if (sideNav.style.width === "250px") {
+    sideNav.style.width = "0";
+    overlay.style.display = "none";
+    menuToggle.innerHTML = "&#9776;";
+  } else {
+    sideNav.style.width = "250px";
+    overlay.style.display = "block";
+    menuToggle.innerHTML = "&times;";
+  }
+});
+
+overlay.addEventListener("click", () => {
+  sideNav.style.width = "0";
+  overlay.style.display = "none";
+  menuToggle.innerHTML = "&#9776;";
+});
+
+dropdownToggle.addEventListener("click", (e) => {
+  e.preventDefault();
+  dropdown.classList.toggle("open");
+});
         </script>
 </body>
 </html>

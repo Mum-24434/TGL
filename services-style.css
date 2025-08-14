@@ -35,21 +35,14 @@ body {
 header {
   background-color: var(--main-bg);
   display: flex;
-  justify-content: space-evenly;
+  justify-content: space-between;
   align-items: center;
-  flex-wrap: wrap;
-  padding: 15px 0 15px 0;
+  padding: 12px 15px;
   position: fixed;
   top: 0;
   width: 100%;
-  border-bottom: 2px solid var(--charcoal);
   z-index: 1000;
-  max-width: 100%;
-}
-@media(max-width:900px){
-  header{
-    flex-direction: column;
-  }
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
 }
 
 #logo-side {
@@ -58,28 +51,84 @@ header {
   gap: 10px;
 }
 
-#logo-side h1 {
+#logo-side-text-area h1 {
   color: var(--header-dark);
-  font-size: 1.5rem;
+  font-size: 1.3rem;
   font-weight: bold;
+  margin: 0;
 }
 
-nav ul {
+#logo-side-text-area p {
+  font-size: 0.85rem;
+  font-weight: bold;
+  color: var(--white);
+  margin: 0;
+}
+
+#menu-toggle {
+  font-size: 28px;
+  cursor: pointer;
+  color: var(--header-dark);
+  background-color: rgba(255, 255, 255, 0.2);
+  padding: 6px 10px;
+  border-radius: 5px;
+  margin-right: 5%;
+}
+
+#menu-toggle:hover {
+  background-color: rgba(255, 255, 255, 0.3);
+}
+
+/* Sidebar */
+#side-nav {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 0;
+  height: 100%;
+  background-color: #e6be76;
+  overflow-x: hidden;
+  transition: 0.3s;
+  z-index: 2000;
+  box-shadow: 2px 0 8px rgba(0,0,0,0.3);
+}
+
+#side-nav ul {
   list-style: none;
-  display: flex;
-  flex-wrap: wrap;
-  column-gap: 10px;
+  padding: 20px;
 }
 
-nav a {
+#side-nav ul li {
+  padding: 10px 0;
+}
+
+#side-nav ul li a {
   text-decoration: none;
   color: var(--header-dark);
   font-weight: bold;
-  transition: color 0.3s;
 }
 
-nav a:hover {
-  color: #ff8800;
+/* Dropdown */
+.dropdown-menu {
+  display: none;
+  list-style: none;
+  padding-left: 15px;
+}
+
+.dropdown.open .dropdown-menu {
+  display: block;
+}
+
+/* Overlay */
+#overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0,0,0,0.4);
+  display: none;
+  z-index: 1500;
 }
 #cleaning-hero{
      margin: 20px auto 0 auto;
@@ -100,7 +149,7 @@ nav a:hover {
 }
 @media (max-width: 750px){
   #cleaning-hero{
-    margin-top:200px;
+    margin-top:auto;
   }
 }
 #cleaning-hero h2{
