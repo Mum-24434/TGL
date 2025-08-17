@@ -79,7 +79,7 @@ header {
   background-color: rgba(255, 255, 255, 0.3);
 }
 
-/* Sidebar */
+/* Sidebar (mobile default) */
 #side-nav {
   position: fixed;
   left: 0;
@@ -104,7 +104,7 @@ header {
 
 #side-nav ul li a {
   text-decoration: none;
-  color: var(--header-dark);
+color: var(--header-dark);
   font-weight: bold;
 }
 
@@ -122,13 +122,73 @@ header {
 /* Overlay */
 #overlay {
   position: fixed;
-  top: 0;
+   top: 0;
   left: 0;
   width: 100%;
   height: 100%;
   background: rgba(0,0,0,0.4);
   display: none;
-  z-index: 1500;
+  z-index: 100;
+
+}
+
+/* ========================= */
+/* Desktop Styles (≥992px)   */
+/* ========================= */
+@media (min-width: 992px) {
+  /* Hide sidebar + overlay + toggle */
+  #side-nav {
+    all: unset; /* removes sidebar styles */
+  }
+  #overlay {
+    display: none !important;
+  }
+  #menu-toggle {
+    display: none;
+  }
+
+  /* Horizontal nav */
+  nav ul {
+    display: flex;
+    gap: 20px;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    align-items: center;
+  }
+  nav ul li {
+    position: relative;
+  }
+  nav ul li a {
+    color: var(--header-dark);
+    text-decoration: none;
+    font-weight: bold;
+    padding: 8px 12px;
+  }
+
+  /* Dropdown menu on desktop */
+  .dropdown-menu {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background: var(--section);
+    min-width: 180pxq;
+    padding: 10px 0;
+    box-shadow: 0 3px 6px rgba(0,0,0,0.2);
+    border-radius: 4px;
+  }
+  .dropdown-menu li {
+    padding: 5px 15px;
+  }
+  .dropdown-menu li a {
+    display: block;
+    padding: 8px 12px;
+    color: var(--header-dark);
+  }
+  .dropdown:hover .dropdown-menu {
+    display: block;
+  }
 }
 #cleaning-hero{
      margin: 20px auto 0 auto;
