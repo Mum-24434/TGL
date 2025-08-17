@@ -135,7 +135,7 @@ color: var(--header-dark);
 /* ========================= */
 /* Desktop Styles (≥992px)   */
 /* ========================= */
-@media (min-width: 992px) {
+@media (min-width: 900px) {
   /* Hide sidebar + overlay + toggle */
   #side-nav {
     all: unset; /* removes sidebar styles */
